@@ -33,13 +33,10 @@ Change the word according to your site
 
 ## Don'ts
 DO NOT GIVE the below permissions with administer privileges to the WordPress user role who you want to hide NRIC from.
-O8: administer O8 (***important to not check since some condition are made with this permission in the code)  
-O8: administer O8 system
-O8: administer O8 data
-O8: all O8 permissions and ACLs
-Any permissions which will make the role to become an Administrator
-
-
-(* FIXME *)
+- O8: administer O8 (***important to not check since some condition are made with this permission in the code) 
+- O8: administer O8 system
+- O8: administer O8 data
+- O8: all O8 permissions and ACLs
+- Any permissions which will make the role to become an Administrator
 
 This is an [extension for CiviCRM](https://docs.civicrm.org/sysadmin/en/latest/customize/extensions/), licensed under [AGPL-3.0](LICENSE.txt).
