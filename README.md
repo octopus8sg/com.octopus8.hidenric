@@ -1,9 +1,13 @@
 # hidenric
-(*FIXME: This extension includes a custom permission named "hidenric" which will hide NRIC record in contact summary page and prevent editing NRIC field from the user. We can choose desired WordPress user roles to do so. *)
 
-This is an [extension for CiviCRM](https://docs.civicrm.org/sysadmin/en/latest/customize/extensions/), licensed under [AGPL-3.0](LICENSE.txt).
+This extension includes a custom permission named "hidenric" which will hide NRIC record in contact summary page and prevent editing NRIC field from the user. We can choose desired WordPress user roles to do so. 
 
 ## Getting Started
+
+“Administer >> Users and Permissions >> Permissions (Access Control) >> WordPress Permissions”
+
+Press “Ctrl” and “F” on the keyboard simultaneously and search the word “administer”
+![Alt text](images/image3.png)
 
 (* FIXME: 
     1. Install and enable "hidenric" extension in your CiviCRM.
@@ -22,6 +26,8 @@ This is an [extension for CiviCRM](https://docs.civicrm.org/sysadmin/en/latest/c
     10. When you check Administrator side, you can see NRIC record. You can also test for other WordPress Roles.
  *)
 
-## Known Issues
+## Don'ts
 
 (* FIXME *)
+
+This is an [extension for CiviCRM](https://docs.civicrm.org/sysadmin/en/latest/customize/extensions/), licensed under [AGPL-3.0](LICENSE.txt).
