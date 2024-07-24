@@ -1,32 +1,44 @@
-# hidenric
+# HideNRIC
 
 This extension includes a custom permission named "hidenric" which will hide NRIC record in contact summary page and prevent editing NRIC field from the user. We can choose desired WordPress user roles to do so. 
 
 ## Getting Started
 
-“Administer >> Users and Permissions >> Permissions (Access Control) >> WordPress Permissions”
+1. “Administer >> Users and Permissions >> Permissions (Access Control) >> WordPress Permissions”
 
-Press “Ctrl” and “F” on the keyboard simultaneously and search the word “administer”
+2. Press “Ctrl” and “F” on the keyboard simultaneously and search the word “administer”
 ![Alt text](images/image3.png)
 
-(* FIXME: 
-    1. Install and enable "hidenric" extension in your CiviCRM.
-    2. Create a new contact, also fill in External ID and Save.
-    3. Go to "Administer >> Users and Permissions >> Access Control Lists >> WordPress Permissions".
-    4. Find "CiviCRM: hide nric" and tick any WordPress User Role that you want to hide from, and Save.
-    5. On navigation bar, hover and click "Users >> Add new user" and Create a new user according to the role that you choose in step3.
-    6. After creating user, go back to WordPress Permissions and tick the below permissions for the WordPress Role you choose
-        - CiviCRM: view all contacts
-        - CiviCRM: edit all contacts
-        - CiviCRM: access CiviCRM backend and API
-        and Save.
-    7. Open new Incognito window and open your local WordPress.
-    8. Log in as a WordPress User Role that you chose.
-    9. Find the contact name you created, and you can see External ID as "*********" in contact summary page and when you click 'edit', you will  see NRIC field hidden.
-    10. When you check Administrator side, you can see NRIC record. You can also test for other WordPress Roles.
- *)
+3. Observe the word after “administer” whether it is “administer O8” or “administer CiviCRM” or “administer SocialServicesConnect” or “administer ……”
+![Alt text](images/image4.png)
+4. Take note of the word after “administer”
+5. Extract the zip file of the extension and Open the extracted files and open “hidenric.php” in Visual Studio
+![Alt text](images/image5.png)
+
+6. Press “Ctrl” and “F” on the keyboard simultaneously and 
+Type “administer” in search field 
+![Alt text](images/image6.png)
+
+7. “administer” will be highlighted in 3 places
+![Alt text](images/image7.png)
+
+8. Change the word after “administer” accordingly to the word you noted in step4 in all 3 places
+![Alt text](images/image8.png)
+For me, I need to change from ‘SocialServicesConnect’ to ‘CiviCRM’.
+Change the word according to your site
+
+9. Save "hidenric.php"
+
+![Alt text](images/image9.png)
 
 ## Don'ts
+DO NOT GIVE the below permissions with administer privileges to the WordPress user role who you want to hide NRIC from.
+O8: administer O8 (***important to not check since some condition are made with this permission in the code)  
+O8: administer O8 system
+O8: administer O8 data
+O8: all O8 permissions and ACLs
+Any permissions which will make the role to become an Administrator
+
 
 (* FIXME *)
 
